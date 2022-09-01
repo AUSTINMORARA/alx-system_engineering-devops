@@ -1,2 +1,2 @@
 #!/bin/bash
-chmod newfile oldfile
+chown betty hello
