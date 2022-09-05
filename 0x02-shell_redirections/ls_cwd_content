@@ -11,4 +11,4 @@ drwxr-xr-x 6 root root 143 Sep  4 23:36 ..
 -rwxr--r-- 1 root root  74 Sep  5 01:14 7-file
 -rwxr--r-- 1 root root  36 Sep  5 01:22 8-cwd_state
 -rw-r--r-- 1 root root  38 Sep  5 01:16 \*\'Best
--rw-r--r-- 1 root root   0 Sep  5 01:23 ls_cwd_content
+-rw-r--r-- 1 root root   0 Sep  5 01:33 ls_cwd_content
