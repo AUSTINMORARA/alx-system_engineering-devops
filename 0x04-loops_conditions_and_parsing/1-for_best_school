@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#Displays 'Best school' ten times.
+
+s="Best School"
+
+for _ in {1..10}
+do
+	echo "$s"
+done
