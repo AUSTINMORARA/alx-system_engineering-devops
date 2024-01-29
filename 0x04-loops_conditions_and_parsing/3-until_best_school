@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Displays "Best school" ten times, using until loop.
+
+var=11
+until [ $var -le 1 ]; do
+	echo "Best School"
+	var=$((var - 1))
+done
