@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# Displays "Best School ten times" and hi at the nineth iteration.
+
+num=1
+
+while [ "$num" -le 10 ]
+do
+	echo "Best School"
+	if [ "$num" -eq 9 ]
+	then
+		echo "Hi"
+	fi
+	num=$(( num + 1 ))
+done
