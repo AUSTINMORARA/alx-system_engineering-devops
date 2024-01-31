@@ -4,8 +4,8 @@
 #+ Displays Buzz when the number is a multiple of 5
 
 for i in {1..100};do
-	three=$((i % 3))
-	five=$((i % 5))
+	three=$((i%3))
+	five=$((i%5))
 
 	if [ $five -eq 0 ] && [ $three -eq 0 ]
 	then
@@ -17,6 +17,6 @@ for i in {1..100};do
 	then
                 echo "Fizz"
         else
-		echo $i
+		echo "$i"
 	fi	
 done
