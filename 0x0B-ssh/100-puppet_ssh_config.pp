@@ -1,6 +1,11 @@
 #Reset the configuration passwordauthentication 
-file_line{'/etc/ssh/sshd_config'
+file_line{'/etc/ssh/ssh_config':
 ensure => 'present',
 line   => 'PasswordAuthentication no',
-match  => 'PasswordAuthentication'
+match  => 'PasswordAuthentication',
+}
+
+file_line{'/etc/ssh/ssh_config':
+ensure => 'present',
+line   => 'IdentityFile ~/.ssh/school',
 }
