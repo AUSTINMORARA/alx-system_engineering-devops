@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#Configuring ssh connection to look for password 
+#and to use certain location for key
+IdentityFile ~/.ssh/school
+  BatchMode yes
+
