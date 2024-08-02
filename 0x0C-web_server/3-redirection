@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# configuration of my Nginx server so that /redirect_me is redirecting to a youtube page
+
+sudo apt-get -y update
+sudo apt-get -y upgrade
+
+# Installation of nginx
+sudo apt-get install -y nginx
+sudo ufw allow 'Nginx HTTP'
+
+# modifying default Nginx configuration to return "Hello World!" at root URL
+sudo bash -c 'echo "Hello World!" > /var/www/html/index.html'
+
+sed -i '/listen 80 default_server/a rewrite ^/redirect_me https://www.youtube.com/@austinmorara7954 permanent;' /etc/nginx/sites-available/default
+# Restart Nginx without using systemctl
+sudo service nginx restart
+
